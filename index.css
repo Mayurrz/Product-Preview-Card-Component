@@ -90,7 +90,7 @@ button::before {
 @media (min-width: 550px) {
     .main {
         flex-direction: row;
-        margin-top: 50px;
+        margin-top: 5%;
         width: max-content;
         border-radius: 10px;
     }
@@ -102,6 +102,12 @@ button::before {
         background-size: 100%;
         border-radius: 10px 0 0 10px;
         padding: 10px;
+    }
+    .big {
+        max-width: 250px;
+    }
+    .in {
+        max-width: 240px;
     }
     .details {
         width: 250px;
