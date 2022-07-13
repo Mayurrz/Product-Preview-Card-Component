@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 body {
     background-color: hsl(30, 38%, 92%);
 }
@@ -10,7 +11,6 @@ body {
     display: flex;
     border-radius: 10px;
     flex-direction: column;
-    /* transform: scale(0.9); */
 }
 
 .pic {
@@ -25,23 +25,28 @@ body {
 
 .details {
     padding: 20px;
-    /* padding-top: 10px; */
 }
 
 .tit {
     color: hsl(228, 12%, 48%);
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 14px;
     margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .big {
+    font-family: 'Fraunces', serif;
     margin-top: 10px;
+    font-weight: 700;
 }
 
 .in {
     font-size: 14px;
     color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .price {
@@ -56,12 +61,14 @@ body {
     margin-right: 30px;
     font-size: 30px;
     color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
 }
 
 .old {
     font-size: 12px;
     color: hsl(228, 12%, 48%);
     text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
 }
 
 button {
@@ -71,6 +78,8 @@ button {
     background-color: hsl(158, 36%, 37%);
     border: none;
     color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 button::before {
@@ -81,20 +90,22 @@ button::before {
 @media (min-width: 550px) {
     .main {
         flex-direction: row;
-        margin-top: 10%;
+        margin-top: 50px;
         width: max-content;
-        border-radius: 20px;
+        border-radius: 10px;
     }
     .pic {
         width: 300px;
         height: 400px;
         background-image: url(/image-product-desktop.jpg);
         background-position: top center;
-        background-size: 300px 400px;
-        border-radius: 20px 0 0 20px;
+        background-size: 100%;
+        border-radius: 10px 0 0 10px;
+        padding: 10px;
     }
     .details {
         width: 250px;
+        padding: 20px;
     }
     button {
         width: 100%;
@@ -102,7 +113,6 @@ button::before {
     button:hover {
         cursor: pointer;
         background-color: hsl(158, 53%, 24%);
-        font-size: 15px;
     }
 }
 
